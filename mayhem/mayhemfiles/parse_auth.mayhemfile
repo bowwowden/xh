@@ -1,0 +1,6 @@
+project: xh
+target: parse_auth
+duration: 300
+
+cmds:
+  - cmd: /parse_auth
