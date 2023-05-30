@@ -1,6 +1,6 @@
 #![no_main]
 use libfuzzer_sys::fuzz_target;
-mod server;
+// mod server;
 
 fuzz_target!(|input: &str| {
 
