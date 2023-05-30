@@ -1,6 +1,6 @@
 #![no_main]
 use libfuzzer_sys::fuzz_target;
-// mod server;
+use xh::test::server::Server;
 
 fuzz_target!(|input: &str| {
 
