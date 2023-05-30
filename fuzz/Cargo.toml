@@ -12,8 +12,6 @@ cargo-fuzz = true
 libfuzzer-sys = "0.4"
 
 [dependencies.xh]
-# DELETE ME: Ensure path is a path relative to this Cargo.toml pointing to
-# DELETE ME: the pacakge you want to import from the repo.
 path = ".."
 
 # Prevent this from interfering with workspaces
@@ -21,7 +19,7 @@ path = ".."
 members = ["."]
 
 [[bin]]
-name = "parse_auth"
-path = "fuzz_targets/parse_auth.rs"
+name = "parse_args"
+path = "fuzz_targets/parse_args.rs"
 test = false
 doc = false
