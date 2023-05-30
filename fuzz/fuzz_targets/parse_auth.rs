@@ -2,7 +2,7 @@
 use libfuzzer_sys::fuzz_target;
 mod server;
 
-fuzz_target!(|input: str| {
+fuzz_target!(|input: &str| {
 
     // let server = server::http(|req| async move {
     //     // assert_eq!(req.method(), "GET");
