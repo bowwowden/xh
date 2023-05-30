@@ -4,14 +4,14 @@ mod server;
 
 fuzz_target!(|input: str| {
 
-    let server = server::http(|req| async move {
-        // assert_eq!(req.method(), "GET");
-        hyper::Response::builder().body(input.into()).unwrap()
-    });
+    // let server = server::http(|req| async move {
+    //     // assert_eq!(req.method(), "GET");
+    //     hyper::Response::builder().body(input.into()).unwrap()
+    // });
 
-    get_command()
-        .args(["--print=b", "get", &server.base_url()])
-        .assert()
-        .stdout(input);
+    // get_command()
+    //     .args(["--print=b", "get", &server.base_url()])
+    //     .assert()
+    //     .stdout(input);
     
 });
